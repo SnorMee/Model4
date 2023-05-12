@@ -131,8 +131,8 @@ console.log(sumVal)
 
 
 // Sizing - independent
-let tw = 1000
-let th = 800
+let tw = 1500
+let th = 1000
 let numX = 4
 // Sizing - DEPENDENT
 let numY = 12/numX
@@ -190,6 +190,12 @@ for (let i = 0; i < 12; i++) {
       "font-family": "Arial",
       "fill": "#000"
   });
+  var extraExtraText = paper.text(x+w/2,y+h/2+12+2+12+2, "Number of Threats: " + String(data['children'][i+1]['numT']));
+  extraExtraText.attr({
+    "font-size": 12,
+    "font-family": "Arial",
+    "fill": "#000"
+});
 };
 return paper
 }
